@@ -4,6 +4,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .content{
     text-align: center;
     position: relative;
@@ -103,3 +107,21 @@ ul li{
     padding-right: 35px;
 }
 
+footer{
+    display: block;
+    text-align: center;
+    color: gray;
+    border-top: 7px rgb(70, 68, 67) solid;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+footer a{
+    color: gray;
+}
+
+footer ul li{
+    list-style: none;
+    display: inline-table;
+    margin: 10px;
+}
