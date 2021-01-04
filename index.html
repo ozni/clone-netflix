@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone - Home</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section id="sign">   
@@ -57,19 +58,40 @@
         <article id="fac">
             <h1>Perguntas Frequentes</h1>
             <ul id="listaDePerguntas">
-                <li><button class="botao-fac">O que é a NetFlix?</button></li>
-                <li><button class="botao-fac">Quanto Custa?</button></li>
-                <li><button class="botao-fac">Onde posso assistir?</button></li>
-                <li><button class="botao-fac">Como cancelar?</button></li>
-                <li><button class="botao-fac">O que eu posso assistir na NetFlix?</button></li>
+                <li>
+                    <button id="what" class="botao-fac">O que é a NetFlix?</button><i class="fa fa-plus"></i>
+                    <span class="informacoes" id="inf1">A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet<br><br>
+                    Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</span>
+                </li>
+
+                <li>
+                    <button id="how" class="botao-fac">Quanto Custa?</button><i class="fa fa-plus"></i>
+                    <span class="informacoes" id="inf2">Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$21,90 a R$45,90 por mês. Sem contrato nem taxas extras.</span>
+                </li>
+
+                <li>
+                    <button id="when" class="botao-fac">Onde posso assistir?</button><i class="fa fa-plus"></i>
+                    <span class="informacoes" id="inf3">Assista onde quiser, o quanto quiser e em um número ilimitado de aparelhos. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames. <br><br>
+                    Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.</span>
+                </li>
+
+                <li>
+                    <button id="cancel" class="botao-fac">Como cancelar?</button><i class="fa fa-plus"></i>
+                    <span class="informacoes" id="inf4">A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.</span>
+                </li>
+
+                <li>
+                    <button id="what2" class="botao-fac">O que eu posso assistir na NetFlix?</button><i class="fa fa-plus"></i>
+                    <span class="informacoes" id="inf5">A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.</span>
+                </li>
             </ul>
+
             <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura</h3>
             <input type="email" name="" class="email" placeholder="email">
             <input class="vamos" type="submit" value="VAMOS LÁ">
         </article>
     </section>
 
-    
-
+    <script src="js/script.js"></script>
 </body>
 </html>

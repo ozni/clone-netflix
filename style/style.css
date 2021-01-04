@@ -69,6 +69,15 @@ article{
      display: block;
  }
 
+#fac i{
+    font-size: 25pt;
+    background-color: rgb(56, 62, 65);
+    padding: 16px;
+    padding-bottom: 22px;
+    border: none;
+    height: 50%;
+}
+
 #fac h1{
     font-size: 35pt;
 }
@@ -77,12 +86,20 @@ ul li{
     margin-bottom: 1%;
 }
 
-.botao-fac{
+.botao-fac, .informacoes{
     background-color: rgb(56, 62, 65);
     color: white;
     padding: 20px;
-    width: 70%;
+    width: 60%;
+    height: 50%;
     text-align: left;
     font-size: 20pt;
+    border: none;
+}
+
+.informacoes{
+    display: none;
+    margin-left: 17.5%;
+    padding-right: 35px;
 }
 
