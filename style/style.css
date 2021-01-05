@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,6 +24,7 @@ input{
     padding: 22px;
     border-radius: 2px;
     border: none;
+    font-size: 15pt;
 }
 
 .vamos, #entrar{
@@ -31,6 +32,7 @@ input{
     color: white;
     cursor: pointer;
     opacity: 0.8;
+    border-radius: 5px;
 }
 
 .vamos, #entrar:focus{
@@ -51,6 +53,7 @@ input{
 
 .vamos{
     width: 20%;
+    font-size: 15pt;
 }
 
 #entrar{
@@ -69,7 +72,7 @@ input{
 article{
     position: relative;
     border-top: 7px rgb(246, 15, 15) solid;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     padding-top: 7%;
     padding-bottom: 7%;
@@ -95,9 +98,10 @@ article{
 
 #fac i{
     font-size: 21pt;
-    background-color: rgb(56, 62, 65);
+    background-color: rgb(50, 60, 65);;
     padding: 2%;
     padding-bottom: 20px;
+    color: rgb(255, 24, 24);
 }
 
 #fac h1{
@@ -109,7 +113,7 @@ ul li{
 }
 
 .botao-fac, .informacoes{
-    background-color: rgb(56, 62, 65);
+    background-color: rgb(50, 60, 65);
     color: white;
     padding: 2%;
     width: 60%;
