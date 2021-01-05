@@ -1,54 +1,47 @@
-span1 = document.querySelector('#what')
+but1 = document.querySelector('#what')
 info1 = document.querySelector('#inf1')
+icon1  = document.querySelector('#icon1')
 
-span1.addEventListener('click', ()=>{
-    if (info1.style.display != "block"){
-        info1.style.display = "block"
-    } else {
-        info1.style.display = "none"
-    }
-})
-
-span2 = document.querySelector('#how')
+but2 = document.querySelector('#how')
 info2 = document.querySelector('#inf2')
+icon2  = document.querySelector('#icon2')
 
-span2.addEventListener('click', ()=>{
-    if (info2.style.display != "block"){
-        info2.style.display = "block"
-    } else {
-        info2.style.display = "none"
-    }
-})
-
-span3 = document.querySelector('#when')
+but3 = document.querySelector('#when')
 info3 = document.querySelector('#inf3')
+icon3  = document.querySelector('#icon3')
 
-span3.addEventListener('click', ()=>{
-    if (info3.style.display != "block"){
-        info3.style.display = "block"
-    } else {
-        info3.style.display = "none"
-    }
-})
-
-span4 = document.querySelector('#cancel')
+but4 = document.querySelector('#cancel')
 info4 = document.querySelector('#inf4')
+icon4  = document.querySelector('#icon4')
 
-span4.addEventListener('click', ()=>{
-    if (info4.style.display != "block"){
-        info4.style.display = "block"
-    } else {
-        info4.style.display = "none"
-    }
-})
-
-span5 = document.querySelector('#what2')
+but5 = document.querySelector('#what2')
 info5 = document.querySelector('#inf5')
+icon5  = document.querySelector('#icon5')
 
-span5.addEventListener('click', ()=>{
-    if (info5.style.display != "block"){
-        info5.style.display = "block"
-    } else {
-        info5.style.display = "none"
-    }
+botoes = [but1, but2, but3, but4, but5]
+
+botoes.forEach(element => {
+    element.addEventListener('click', ()=>{
+        if (element.id === 'what'){
+            showInfo(info1, icon1)
+        } else if (element.id === 'how'){
+            showInfo(info2, icon2)
+        } else if (element.id === 'when'){
+            showInfo(info3, icon3)
+        } else if (element.id === 'cancel'){
+            showInfo(info4, icon4)
+        } else {
+            showInfo(info5, icon5)
+        }
+    })
 })
+
+function showInfo(informacao, icone){
+    if (informacao.style.display != "block"){
+        informacao.style.display = "block"
+        icone.setAttribute('class', 'fa fa-remove')
+    } else {
+        informacao.style.display = "none"
+        icone.setAttribute('class', 'fa fa-plus')
+    }
+}
