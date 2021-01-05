@@ -30,7 +30,7 @@ input{
     background-color: red;
     color: white;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .vamos, #entrar:focus{
@@ -68,7 +68,7 @@ input{
 
 article{
     position: relative;
-    border-top: 7px rgb(70, 68, 67) solid;
+    border-top: 7px rgb(246, 15, 15) solid;
     background-color: black;
     display: flex;
     padding-top: 7%;
